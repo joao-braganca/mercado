@@ -1,0 +1,10 @@
+CREATE SCHEMA mercado;
+USE mercado;
+
+-- TABELAS
+
+CREATE TABLE login (usuario varchar(50) NOT NULL, senha varchar(50) NOT NULL);
+
+CREATE TABLE produtos (id_produto int(4) NOT NULL AUTO_INCREMENT, nome_produto varchar(50) NOT NULL, quantidade int(4) NOT NULL, valor decimal(2,2) NOT NULL);
+
+-- INSERINDO DADOS
