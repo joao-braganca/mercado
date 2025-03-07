@@ -8,7 +8,7 @@ $password = "Root";
 
 $mysqli = new mysqli($localhost, $user_banco, $password, $banco);
 if($mysqli->connect-error){
-acho "falhou algo aí meu bom, olha só 
+acho "falhou algo aí meu bom, olha só: " . $mysqli->connect-error . " .";
 }
 
 /* CODIGO LOGIN */
