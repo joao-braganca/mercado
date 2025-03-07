@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" class="login">
+<head>
+    <meta charset="UTF-8">
+    <title>MERCADO - LOGIN</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/script.js"></script>
+</head>
+<body class="login">
+    <form action="login.php" class="inicio-login" method="POST">
+        <h1>FAÇA SEU LOGIN</h1>
+        <br>
+        <br>
+        <input type="text" placeholder="Digite o usuário:" name="usuario">
+        <br>
+        <br>
+        <div>
+            <input type="password" placeholder="Digite a senha:" id="senha" style="margin-right: -5px; padding-right: 0px;" name="senha">
+            <input type="button" onclick="verSenha()" class="verSenha" value="🔎" style="margin-left: 0px; padding-left: 0px;">
+        </div>
+        <button name="entrar" type="submit">ENTRAR</button>
+        
+    </form>
+</body>
+</html>

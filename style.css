@@ -1,0 +1,22 @@
+html, body{
+    height: 100%;
+    width: 100%;
+
+}
+/* LOGIN */
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+.inicio-login{
+    background-color: #ffffff; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+     flex-direction: column;
+     height: 350px;
+     width: 300px;
+}
