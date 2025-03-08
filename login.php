@@ -18,7 +18,14 @@ $usuario=$_POST["usuario"];
 $senha=$_POST["senha"];
 
 if(isset($_POST["entrar"])){
-
+$selecionar_admin = "SELECT * FROM login WHERE usuario = '" . $usuario . "' AND senha = '". $senha . "';";
+$result = $mysqli->query($selecionar_admin);
+if($result->num_rows>0){
+    echo "deu certo";
+}
+else{
+    echo "deu ruim";
+}
 }
 
 
