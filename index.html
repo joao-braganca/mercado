@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="login">
+<html lang="pt-br" class="login">
 <head>
     <meta charset="UTF-8">
     <title>MERCADO - LOGIN</title>
@@ -10,6 +10,7 @@
     <form action="login.php" class="inicio-login" method="post">
         <h1>FAÇA SEU LOGIN</h1>
         <br>
+        <h4 id="erro" style="color:#ffffff; background-color: #ff0000; visibility: hidden; padding: 0px; margin: 0px; position: fixed;">SENHA OU LOGIN INCORRETO</h4>
         <br>
         <input type="text" placeholder="Digite o usuário:" name="usuario">
         <br>
@@ -18,8 +19,19 @@
             <input type="password" placeholder="Digite a senha:" id="senha" style="margin-right: -5px; padding-right: 0px;" name="senha">
             <input type="button" onclick="verSenha()" class="verSenha" value="🔎" style="margin-left: 0px; padding-left: 0px;">
         </div>
+        <br>
+        <br>
         <button name="entrar" type="submit">ENTRAR</button>
         
     </form>
 </body>
+<script>
+window.onload = function erroh1() {
+    var erro = new URLSearchParams(window.location.search);
+    if (erro.has("erro") && erro.get("erro") == '1') {
+        document.getElementById('erro').style.visibility = "visible";
+        document.getElementById('erro').style.position = "relative";
+        console.log("ta certo meu bom");
+    }
+};</script>
 </html>

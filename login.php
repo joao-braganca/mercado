@@ -22,9 +22,11 @@ $selecionar_admin = "SELECT * FROM login WHERE usuario = '" . $usuario . "' AND 
 $result = $mysqli->query($selecionar_admin);
 if($result->num_rows>0){
     echo "deu certo";
+    header("Location: mercado.html");
 }
 else{
-    echo "deu ruim";
+    header("Location: index.html?erro=1");
+exit();
 }
 }
 
